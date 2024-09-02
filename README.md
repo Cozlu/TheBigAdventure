@@ -5,6 +5,7 @@ University Project
 November 2023 - January 2024
 
 Video game programmed in Java inspired by adventures games where you can create your own little adventure
+
 ---
 
 ## How to launch the game ?
@@ -27,6 +28,7 @@ Projet Universitaire
 Novembre 2023 - Januvier 2024
 
 Jeux vidéo programmé en Java inspiré par les jeux d'aventure où vous pouvez créer votre propre petite aventure
+
 ---
 
 ## Comment lancer le jeu ?
