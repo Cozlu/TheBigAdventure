@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TheBigAdventure" default="jar">
+
+    <property name="src.dir" value="src"/>
+    <property name="javadoc.dir" value="docs/api"/>
+    <property name="classes.dir" value="classes"/>
+
+    <target name="compile">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpath="lib/zen5.jar"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <manifest file="MANIFEST.MF">
+            <attribute name="Main-Class" value="fr.uge.main.Main"/>
+        </manifest>
+        <jar destfile="thebigadventure.jar" basedir="${classes.dir}" manifest="MANIFEST.MF">
+            <zipfileset src="lib/zen5.jar"/>
+            <fileset dir="src"/>
+        </jar>
+    </target>
+
+    <target name="javadoc">
+        <javadoc packagenames="fr.uge.cmdline, fr.uge.graph, fr.uge.lexer, fr.uge.main, fr.uge.thebigadventure"  sourcepath="${src.dir}" destdir="${javadoc.dir}" classpath="lib/zen5.jar"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="${classes.dir}"/>
+    	<mkdir dir="${classes.dir}"/>
+    </target>
+
+</project>

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"fr.uge.cmdline"},{"l":"fr.uge.graph"},{"l":"fr.uge.lexer"},{"l":"fr.uge.main"},{"l":"fr.uge.thebigadventure"}];updateSearchResults();

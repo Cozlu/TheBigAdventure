@@ -1,0 +1,411 @@
+[grid]
+  size: (80 x 47)
+  encodings: LAVA(L) PLANK(p) GRASS(g) TREE(T) TREES(E) FLOWER(f) WALL(W)
+    ROCK(R) LILY(l) FENCE(F) WATER(Z) HUSK(H) HUSKS(I) ROAD(r) HOUSE(h)
+    REED(D) SIGN(S) ALGAE(A) TILE(t) TOWER (G)
+    BRICK(K) DOOR(O) RUBBLE(Q) CLIFF(c) BOG(o)
+  data: """
+  EEEEEEEEEEEEEEEEEEEEEEEEEEERRRLLLLLLLLRRRREEZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+  EETET          TTEET            LLLL           DDZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+  ET                               LL               ZZZZZZZZZZcZZZZZZZZZZZZZZZZZZZ
+  E                                tt                     ZZZZZZZZZZZZZZZZZZZZZZZZ
+  E       g f                 IH   LL                        ZZZZZZZZZZZZZZZZZZZZZ
+  E        g                  IHHIILL                         ZZZZZZZZZZZZZZZZZZZZ
+  E                              IILL                         ZZZZZZZZZZZZZZZZZZZZ
+  E                             LLLLLL          T             lZZZZZZZZZZZZZZZZZZZ
+  E                             LLLLLLLL         E          TEZZZAZZZZZZZZZZZZZZZZ
+  E                              LLLL                        TZZ  EZZZZZZZZZZZZZZZ
+  E                              L                            ll   ZZZZZZZZZZZZZZZ
+  E                                                           ZZ      ZZZZZZZZZZZZ
+  E                                                          ZZZ        gZZZZZZZZZ
+  E                                                          ZZ      g ggg   ZZZZZ
+  E                                        ftt              ZZ    EEE  g ggg  g ZZ
+  E                                         tt             ZZA    EEEEEE  g gg g E
+  E             h                                        ZZZZZ    EEEETEEEE gggg E
+  E            FF FFFF                                    ZZZ     EEETEEEE g gg  E
+  E              rrrrr                                    ZZ      EEEEEEEEEggg g E
+  E                                                       ZZ      EETEETEEEE gggEE
+  Q                                   D                   ZZ      EEETEEEEEEE gEEE
+  QR ZZZZ  DDD     EETET   ZZZZZZ   DZZZl  ZZZZZZZZZZ   T ZZ      EEEEEETETETggEEE
+  ZZZZZZZZZZZZZZZtZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ     ETEEEEEETEEg ETE
+  QQR   ZZZZ        ZZZZZZ     ZZZZZZZZZZZZZZ    f   ZZZZZZ        EETEEEEEEET EEE
+  Q             S                                                   TEEEEEEEEEEEEE
+  Q                                                                 EEETEEETTEEETE
+  Q                     gg g                            H          EETEETETEEEEEEE
+  ET                     ggg         IH         ff       II        EETEEEETEEETEEE
+  WWWG                              IH          ffff              EEETEEEEEEEEEEEE
+  W  F            fff                  I       ffff               EEEETEEEETETEEEE
+  W  F          ffff ff                                           EEEETEEEEEEEETEE
+  W              fffff                                            EEEETEEEEEETTETE
+  W  F                     E           ff                      EEETEEEEETEEEEEETEE
+  WWWG                     hEE          f                    ETEETEEEEEEEEEEEETEEE
+  E        g g                                   WWWWWWWWW WWWWWWWWWWWWWWWWWWWWWWW
+  E        gg            g                       WttttttttttttttttWttttttttttttttW
+  E                     ggff           g         WttttttttttttttttWttttttttttttttW
+  E                       f             g        WttttttttttttttttWttttttttttttttW
+  E        FFFFF                                 WttttttttttttttttWttttttttttttttW
+  E        F                       WWWWWWWWWWOWWWWttttttttttttttttWttttttttttttttW
+  E        F    F                  WttttttttttttttttttttttttttttttWttttttttttttttW
+  E        F    F                  WttttttttttttttttttttttttttttttWttttttttttttttW
+  E        FFFFFQ                  WttttttttttttttttttttttttttttttWttttttttttttttW
+  E                                 tttttttttttttttttttttttttttttttttttttttttttttW
+  Q                                WttttttttttttttttttttttttttttttWttttttttttttttW
+  QQ                               WttttttttttttttttttttttttttttttWttttttttttttttW
+  QQQooooooooooooooooooooooooooooooWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+  """
+
+[element]
+  name: fluffy
+  player: true
+  skin: BABA
+  position: (5,5)
+  health: 50
+
+[element]
+  name: stick
+  skin: STICK
+  position: (14,1)
+  kind: item
+  damage: 10
+
+[element]
+  name: sword
+  skin: SWORD
+  position: (1,29)
+  kind: item
+  damage: 20
+
+[element]
+  name: excalibur
+  skin: SWORD
+  position: (76,23)
+  kind: item
+  damage: 50
+
+[element]
+  name: forax
+  skin: SKULL
+  position: (70, 40)
+  kind: enemy
+  health: 500
+  zone: (66, 36) (8 x 8)
+  behavior: agressive
+  damage: 20
+
+[element]
+  name: valber
+  skin: CAT
+  position: (76,20)
+  kind: enemy
+  health: 250
+  zone: (73,18) (8 x 8)
+  behavior: agressive
+  damage: 15
+
+[element]
+  name: maskon
+  skin: BUG
+  position: (25,40)
+  kind: enemy
+  health: 250
+  zone: (20,35) (10 x 10)
+  behavior: agressive
+  damage: 15
+
+[element]
+  name: onilaf
+  skin: GHOST
+  position: (60, 40)
+  kind: enemy
+  health: 250
+  zone: (55, 35) (10 x 10)
+  behavior: agressive
+  damage: 15
+
+[element]
+  name: margherita
+  skin: PIZZA
+  position: (52,42)
+  kind: item
+  
+[element]
+  name: jack
+  skin: PUMPKIN
+  position: (54,42)
+  kind: item
+
+[element]
+  name: linux
+  skin: EGG
+  position: (13,41)
+  kind: item
+[element]
+  name: linux
+  skin: EGG
+  position: (10,39)
+  kind: item
+
+[element]
+  name: forbiden
+  skin: FRUIT
+  position: (20,20)
+  kind: item
+[element]
+  name: forbiden
+  skin: FRUIT
+  position: (46,8)
+  kind: item
+[element]
+  name: forbiden
+  skin: FRUIT
+  position: (58,9)
+  kind: item
+
+
+[element]
+  name: piano
+  skin: PIANO
+  position: (63,38)
+  kind: obstacle
+
+[element]
+  name: chair
+  skin: CHAIR
+  position: (54,40)
+  kind: obstacle
+[element]
+  name: chair
+  skin: CHAIR
+  position: (52,40)
+  kind: obstacle
+[element]
+  name: chair
+  skin: CHAIR
+  position: (54,44)
+  kind: obstacle
+[element]
+  name: chair
+  skin: CHAIR
+  position: (52,44)
+  kind: obstacle
+
+[element]
+  name: table
+  skin: TABLE
+  position: (51,41)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (52,41)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (53,41)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (54,41)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (55,41)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (51,43)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (52,43)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (53,43)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (54,43)
+  kind: obstacle
+[element]
+  name: table
+  skin: TABLE
+  position: (55,43)
+  kind: obstacle
+
+[element]
+  name: statue
+  skin: STATUE
+  position: (44,40)
+  kind: obstacle
+[element]
+  name: statue
+  skin: STATUE
+  position: (42,40)
+  kind: obstacle
+
+[element]
+  name: statue
+  skin: STATUE
+  position: (34,42)
+  kind: obstacle
+[element]
+  name: statue
+  skin: STATUE
+  position: (34,44)
+  kind: obstacle
+
+[element]
+  name: statue
+  skin: STATUE
+  position: (55,35)
+  kind: obstacle
+[element]
+  name: statue
+  skin: STATUE
+  position: (57,35)
+  kind: obstacle
+
+[element]
+  name: bed
+  skin: BED
+  position: (38,45)
+  kind: obstacle
+[element]
+  name: bed
+  skin: BED
+  position: (41,45)
+  kind: obstacle
+[element]
+  name: bed
+  skin: BED
+  position: (44,45)
+  kind: obstacle
+
+
+  [element]
+  name: LevelOne
+  skin: BADBAD
+  position: (11, 5)
+  kind: enemy
+  health: 30
+  zone: (12, 5) (8 x 6)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: LevelOne
+  skin: BADBAD
+  position: (11, 6)
+  kind: enemy
+  health: 30
+  zone: (12, 6) (11 x 5)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: LevelOne
+  skin: BADBAD
+  position: (12, 6)
+  kind: enemy
+  health: 30
+  zone: (11, 6) (10 x 5)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: LevelOne
+  skin: BADBAD
+  position: (2, 5)
+  kind: enemy
+  health: 30
+  zone: (5, 5) (4 x 4)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: LevelOne
+  skin: BADBAD
+  position: (1, 9)
+  kind: enemy
+  health: 30
+  zone: (1, 10) (3 x 9)
+  behavior: stroll
+  damage: 4
+
+[element]
+  name: LevelTwo
+  skin: CRAB
+  position: (16, 24)
+  kind: enemy
+  health: 50
+  zone: (15, 24) (10 x 8)
+  behavior: stroll
+  damage: 8
+
+[element]
+  name: LevelTwo
+  skin: CRAB
+  position: (38, 24)
+  kind: enemy
+  health: 50
+  zone: (38, 24) (8 x 10)
+  behavior: stroll
+  damage: 8
+
+[element]
+  name: LevelTwo
+  skin: CRAB
+  position: (12, 32)
+  kind: enemy
+  health: 50
+  zone: (10, 30) (6 x 12)
+  behavior: agressive
+  damage: 8
+
+[element]
+  name: LevelTwo
+  skin: CRAB
+  position: (34, 36)
+  kind: enemy
+  health: 50
+  zone: (32, 34) (12 x 6)
+  behavior: agressive
+  damage: 8
+
+[element]
+  name: LevelThree
+  skin: MONSTER
+  position: (54, 11)
+  kind: enemy
+  health: 100
+  zone: (53, 10) (5 x 5)
+  behavior: agressive
+  damage: 12
+
+[element]
+  name: LevelThree
+  skin: MONSTER
+  position: (64, 12)
+  kind: enemy
+  health: 100
+  zone: (62, 10) (5 x 5)
+  behavior: agressive
+  damage: 12
+
+[element]
+  name: LevelThree
+  skin: MONSTER
+  position: (50, 17)
+  kind: enemy
+  health: 100
+  zone: (49, 16) (5 x 5)
+  behavior: agressive
+  damage: 12

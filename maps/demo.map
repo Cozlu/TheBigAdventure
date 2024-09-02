@@ -1,0 +1,96 @@
+[grid]
+  size: (20 x 25)
+  encodings: GRASS(g) TREE(T) WALL(W)
+  data: """
+  TTTTTTTTTTTTTTTTTTTT
+  T                  T
+  T                  T
+  T        W         T
+  T                  T
+  T                  T
+  T                  T
+  T     gg           T
+  T   ggggggg        T
+  T     gggg         T
+  T   gg  g          T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  T                  T
+  TTTTTTTTTTTTTTTTTTTT
+  """
+
+[element]
+  name: fluffy
+  player: true
+  skin: BABA
+  position: (10,10)
+  health: 100
+
+[element]
+  name: durendale
+  skin: SWORD
+  position: (2,2)
+  kind: item
+  damage: 15
+
+[element]
+  name: stick
+  skin: STICK
+  position: (4,2)
+  kind: item
+  damage: 5
+
+[element]
+  name: key
+  skin: KEY
+  position: (6,2)
+  kind: item
+
+[element]
+  name: waldo
+  skin: CRAB
+  position: (8, 2)
+  kind: enemy
+  health: 50
+  zone: (8, 2) (3 x 3)
+  behavior: stroll
+  damage: 10
+
+[element]
+  name: piano
+  skin: PIANO
+  position: (18,10)
+  kind: obstacle
+
+[element]
+  name: chair
+  skin: CHAIR
+  position: (10,16)
+  kind: obstacle
+[element]
+  name: chair
+  skin: CHAIR
+  position: (10,14)
+  kind: obstacle
+
+[element]
+  name: table
+  skin: TABLE
+  position: (10,15)
+  kind: obstacle
+
+[element]
+  name: patate
+  skin: POTATO
+  position: (13,15)
+  kind: item
