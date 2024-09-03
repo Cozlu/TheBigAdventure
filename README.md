@@ -11,6 +11,7 @@ Video game programmed in Java inspired by adventures games where you can create 
 ## How to launch the game ?
 
 Use java -jar thebigadventure.jar [OPTIONS] to launch the game
+
 *the options can be found in the user manual in the "docs" folder*
 
 ## How to play ?
@@ -34,6 +35,7 @@ Jeux vidéo programmé en Java inspiré par les jeux d'aventure où vous pouvez 
 ## Comment lancer le jeu ?
 
 Utilisez java -jar thebigadventure.jar [OPTIONS] tpour lancer le jeu
+
 *les options peuvent êtres trouvées dans le manuel utilisateur du répertoir "docs"*
 
 ## Comment jouer ?
