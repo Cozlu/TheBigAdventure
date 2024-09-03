@@ -12,7 +12,7 @@ Video game programmed in Java inspired by adventures games where you can create 
 
 Use java -jar thebigadventure.jar [OPTIONS] to launch the game
 
-*the options can be found in the user manual in the "docs" folder*
+*options can be found in the user manual in the "docs" folder*
 
 ## How to play ?
 
